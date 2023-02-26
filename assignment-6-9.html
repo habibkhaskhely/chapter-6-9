@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var checkname = prompt("Enter your user name")
+if(checkname== "habib"){
+    document.write("yes your user is available")
+}
+else{document.write("Sorry your user: " +checkname+" is not available")}
+        document.write("chapters 6-9")
+        var a=10;
+        var b=9;
+        var c= ++b;
+        var d= --b;
+        var e= b--;
+        var f= --b;
+document.write(a + '<br>')
+document.write(b + '<br>')
+document.write(c + '<br>')
+document.write(d + '<br>')
+document.write(e + '<br>')
+document.write(f + '<br>')
+var a = 2, b = 1;
+var result3 = --a - --b + ++b + b--;
+console.log(result3)
+
+var username = prompt("Enter your name");
+if(username == "ali" || username == "kamran"){
+    console.log("welcome to " + username)
+}
+else{console.log("User is not available plz try again")}
+
+document.write("start subject here")
+
+var tablenum = +prompt("Enter your number of Subjects ");
+document.write('<table border="1">')
+ document.write('<tr><td>Subject</td>');
+    document.write('<td>Total Marks</td>');
+    document.write('<td>Obtained</td>');
+    document.write('<td>Percentage</td></tr>')    
+for (let i = 0; i < tablenum; i++) {
+    var subname = prompt("enter your subject  Name:");
+    var subNum = prompt("enter  obtained Marks " +subname);
+    document.write('<tr><td>'+subname+'</td>');
+    document.write('<td>'+100+'</td>');
+    document.write('<td>'+subNum+'</td>');
+    var per = subNum % 100 + "%" ;
+    document.write('<td>'+ per +'</td></tr>')
+    
+}
+document.write('</table>')
+
+
+    </script>
+</body>
+</html>

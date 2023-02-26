@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var items = prompt("Enter your item: vegetable or fruit");
+        if(items == "vegetable" ){
+            var itemName = prompt("Enter Item Name: onion or petato")
+            if(itemName == "onion" || itemName == "petato"){
+                var itemQuatity = prompt("Your Orderd:" + itemName + ". How many you need: 5 or 10")
+                    if( itemQuatity == 5 || itemQuatity == 10){
+                        var cityname = prompt("Your Orderd:" + itemName + " " + itemQuatity + "kg: Please enter your City name: karachi or lahore")
+                            if(cityname == "karachi" || cityname == "lahore"){
+                                    var phoneNum = prompt("Please share " +cityname + ": Contact Number: 0321 or 0333 or 0300")                                    
+                                        alert ("congratulations! you Ordered, vegetable: " + itemName + " " + itemQuatity + "KG  Address: " + cityname + "")                                    
+                            }
+                        }
+                    
+                    }
+            }
+            else if(items == "fruit" ){
+            var itemName = prompt("Enter Item Name: apple or banana")
+            if(itemName == "apple" || itemName == "banana"){
+                var itemQuatity = prompt("Your Orderd:" + itemName + ". How many you need: 5 or 10")
+                    if( itemQuatity == 5 || itemQuatity == 10){
+                        var cityname = prompt("Your Orderd:" + itemName + " " + itemQuatity + "kg: Please enter your City name: karachi or lahore")
+                            if(cityname == "karachi" || cityname == "lahore"){
+                                    var phoneNum = prompt("Please share " +cityname + ": Contact Number: 0321 or 0333 or 0300")                                    
+                                        alert ("congratulations! you Ordered, Fruit: " + itemName + " " + itemQuatity + "KG  Address: " + cityname + "")                                    
+                            }
+                        }
+                    
+                    }
+            }
+            else
+            {alert("out")}
+        
+    </script>
+
+</body>
+</html>
